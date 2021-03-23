@@ -1,0 +1,12 @@
+= Camel-K Telegram Demo 
+
+Download Kamel binary  https://github.com/apache/camel-k/releases
+
+Create the secret 
+
+    oc create secret generic camelk-bot --from-file application.properties
+
+RUN 
+
+    kamel run CamelBot.java --dev --secret=camelk-bot
+    
